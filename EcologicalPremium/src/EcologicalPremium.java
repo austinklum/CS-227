@@ -12,9 +12,9 @@ public class EcologicalPremium {
 		int numCases = scan.nextInt();
 		for(int i = 0; i < numCases; i++) {
 			int farmers = scan.nextInt();
-			int moneyRecieved = 0;
+			long moneyRecieved = 0;
 			for(int j = 0; j < farmers; j++) {
-				int size = scan.nextInt(), animals = scan.nextInt(), evoFri = scan.nextInt();
+				Long size = scan.nextLong(), animals = scan.nextLong(), evoFri = scan.nextLong();
 				moneyRecieved += size * evoFri;
 			}
 			System.out.println(moneyRecieved);
